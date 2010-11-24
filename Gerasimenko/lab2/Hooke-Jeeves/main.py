@@ -38,5 +38,5 @@ if __name__ == '__main__':
     
     print "x = {0}    y = {1}".format(x0_X, x0_Y)
     
-    f = func(1,x[0])
+    f = func(2,x[0])
     print f
