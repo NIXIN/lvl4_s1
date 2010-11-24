@@ -9,8 +9,24 @@ def func(vib_func, koord):
     elif vib_func == 2:
         return 0.5 * (x2 - x1**2)**2 + (1 - x1)**2
     elif vib_func == 3:
-        return 100 * (x2 - x1**2)**2 + (1 - x1)**2        
+        return 100 * (x2 - x1**2)**2 + (1 - x1)**2
+    
+def incr_X(koord, step_X):
+    koord = [koord[0] + step_X, koord[1]]
+    return koord
 
+def decr_X(koord, step_X):
+    koord = [koord[0] - step_X, koord[1]]
+    return koord
+
+def incr_Y(koord, step_Y):
+    koord = [koord[0], koord[1] + step_Y]
+    return koord
+
+def decr_Y(koord, step_Y):
+    koord = [koord[0], koord[1] - step_Y]
+    return koord
+ 
 def input_data(text):
     print text
     
@@ -23,6 +39,8 @@ def input_data(text):
     return data
 
 if __name__ == '__main__':
+    vib_func = 1
+    
     text = "%s" % unicode('Введите координату x1 начальной точки: ', 'utf-8')
     x0_X = input_data(text)
     text = "%s" % unicode('Введите координату x2 начальной точки: ', 'utf-8')
@@ -38,5 +56,5 @@ if __name__ == '__main__':
     
     print "x = {0}    y = {1}".format(x0_X, x0_Y)
     
-    f = func(2,x[0])
-    print f
+    koord = incr_Y(x[0], step_Y)
+    print koord
