@@ -24,6 +24,11 @@ class TestX(unittest.TestCase):
         stepX = 1
         self.assertEqual([2,1], incr_X(x,stepX))
         
+    def test_incrX_float(self):
+        x = [1,1]
+        stepX = 0.0001
+        self.assertEqual([1.0001,1], incr_X(x,stepX))
+        
     def test_decrX(self):
         x = [1,1]
         stepX = 1
