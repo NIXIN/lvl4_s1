@@ -9,6 +9,7 @@ if __name__ == '__main__':
     text = "%s" % unicode('Выберите функцию: ', 'utf-8')
     vib_func = value.input(text)
     
+    
     text = "%s" % unicode('Введите координату x1 начальной точки: ', 'utf-8')
     x0_X = value.input(text)
     text = "%s" % unicode('Введите координату x2 начальной точки: ', 'utf-8')

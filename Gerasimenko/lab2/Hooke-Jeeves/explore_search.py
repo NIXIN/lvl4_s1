@@ -50,8 +50,6 @@ class ExploreSearch(object):
         return self.array[i]
     
     def search(self, dot):
-
-        
         for i in xrange(1, 5, 1):            
             dot_new = self.change_coord(i, dot)
             comp = self.compare_dots(dot, dot_new)
