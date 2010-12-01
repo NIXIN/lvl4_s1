@@ -36,20 +36,20 @@ def handler_ExploreSearch(no_func, eps, x0, step_X, step_Y):
 
 if __name__ == '__main__':
     text = "%s" % unicode('Выберите функцию: ', 'utf-8')
-    vib_func = value.input(text)
+    vib_func = value.input(text, type="int", min=1, max=3)
     
     text = "%s" % unicode('Введите точность вычислений: ', 'utf-8')
-    eps = value.input(text)
+    eps = value.input(text, type="float")
     
     text = "%s" % unicode('Введите координату x1 начальной точки: ', 'utf-8')
-    x0_X = value.input(text)
+    x0_X = value.input(text, type="float")
     text = "%s" % unicode('Введите координату x2 начальной точки: ', 'utf-8')
-    x0_Y = value.input(text)
+    x0_Y = value.input(text, type="float")
     
     text = "%s" % unicode('Введите шаг по координате X: ', 'utf-8')
-    step_X = value.input(text)
+    step_X = value.input(text, type="float")
     text = "%s" % unicode('Введите шаг по координате Y: ', 'utf-8')
-    step_Y = value.input(text)
+    step_Y = value.input(text, type="float")
     
     x = {}
     x = {0:[x0_X,x0_Y]}
