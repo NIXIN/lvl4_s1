@@ -53,7 +53,7 @@ if __name__ == '__main__':
     
     x = {}
     x = {0:[x0_X,x0_Y]}
-    alpha = 10
+    alpha = 10  # коэффициент затуния
     
     print "x = {0}".format(x[0])
     print "f = {0}".format(calculate.func(vib_func,x[0]))
