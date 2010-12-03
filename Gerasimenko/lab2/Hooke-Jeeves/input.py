@@ -27,7 +27,8 @@ def input(text, **params):
         value = input(text, type=type, min=min, max=max)
     
     return value
-        
+ 
+       
 #text = "Input data:"    
 #test_int = input(text, type="int", min=1, max=3)
 #print "test_int = {0}".format(test_int)
